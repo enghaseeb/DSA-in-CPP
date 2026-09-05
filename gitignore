@@ -1,9 +1,0 @@
-#Ignore Windows executable files 
-*.exe
-
-#Ignore object files and build output 
-*.o
-*.obj
-#Ignore IDE specific folders
-.vscode/
-.idea/
