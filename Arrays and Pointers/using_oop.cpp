@@ -2,18 +2,17 @@
 using namespace::std;
 
 class Employee {
-protected: // Changed to protected so derived classes can access if needed
+protected: 
     string name;
     string address;
 
 public:
-    // Constructor to properly initialize the data members
     Employee(string empName, string empAddress) {
         name = empName;
         address = empAddress;
     }
 
-    // Display method prints internal data members
+
     void display() {
         cout << "Name: " << name << " | Address: " << address << endl;
     }
@@ -24,7 +23,6 @@ private:
     double monthlySalary;
 
 public:
-    // Call parent constructor and initialize subclass member
     Salaried_Emp(string empName, string empAddress, double salary) 
         : Employee(empName, empAddress) {
         monthlySalary = salary;
@@ -41,7 +39,6 @@ private:
     int hoursWorked;
 
 public:
-    // Call parent constructor and initialize subclass members
     Hourly_Emp(string empName, string empAddress, double rate, int hours) 
         : Employee(empName, empAddress) {
         hourlyRate = rate;
