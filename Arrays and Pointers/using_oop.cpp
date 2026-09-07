@@ -62,10 +62,10 @@ int main(){
     cout << endl;
 
     // Creating derived class objects
-    Salaried_Emp em1("Alice", "Street 1", 3500.0);
+    Salaried_Emp em1("Sami", "Street 1", 3500.0);
     em1.calculate_salary();
 
-    Hourly_Emp em2("Bob", "Street 2", 25.0, 40);
+    Hourly_Emp em2("Haseeb", "Street 2", 25.0, 40);
     em2.calculate_salary();
 
     return 0;
